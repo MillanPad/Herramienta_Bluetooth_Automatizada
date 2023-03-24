@@ -22,7 +22,7 @@ def conexion():
     subprocess.run(["bt-agent", "-c","NoInputNoOutput","-d"])
 # Pedir variables por pantalla
 def obtenerPIN(ruta):
-    result = subprocess.run(["cat", ruta,"|","grep","SendClick"], capture_output=True)
+    result = subprocess.run(["cat", ruta,"|","grep","ClickSend"], capture_output=True)
     result = result.stdout.decode().strip()
     print(result)
 def obtenerListaNombres(ruta):
