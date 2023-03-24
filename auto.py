@@ -15,7 +15,7 @@ def send_sms(msg_from,msg_to,msg_body):
     print(output)
 
 def escaneo():
-    resutl = subprocess.run(["ubertooth-scan","-s","hci0","|","grep",":"],capture_output=True)
+    result = subprocess.run(["ubertooth-scan","-s","hci0","|","grep",":"],capture_output=True)
     result = result.stdout.decode().strip()
     print(result)
 def conexion():
